@@ -1,0 +1,13 @@
+uid: EX-0007
+type: example
+status: proposed
+title: A standard whose CI does not run the conformance check
+text: conformance/no-ci has a graph job that runs tl check but not the conformance
+  action. The conformance action fails it.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0006
+  type: verifies
+attrs:
+  origin: ai

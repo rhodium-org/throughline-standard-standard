@@ -1,0 +1,22 @@
+uid: RULE-0003
+type: rule
+status: proposed
+title: 'A standard holds five registers: vision, constraints, rules, examples and
+  non-goals'
+text: 'A standard''s graph sits at its repository''s root and holds a register for
+  each of these types: intent (INT, vision/), constraint (CON, constraints/), rule
+  (RULE, rules/), example (EX, examples/) and non_goal (NG, non-goals/). It may hold
+  others.'
+rationale: The shape the plan and presentation standards share. The why, the obligations
+  on the standard itself, what a conforming graph must do, the examples that show
+  it, and what is left out on purpose each have one home in every standard. The types
+  are declared here and inherited; the registers are a standard's own and checked
+  by the conformance action.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0004
+  type: derives_from
+attrs:
+  origin: ai

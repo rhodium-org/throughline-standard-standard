@@ -1,0 +1,8 @@
+uid: INT-0001
+type: intent
+status: proposed
+title: An example standard
+text: A standard that exists only to be checked.
+normative: false
+attrs:
+  origin: ai

@@ -1,0 +1,19 @@
+uid: RULE-0009
+type: rule
+status: proposed
+title: A standard's README shows how to follow it
+text: A standard's README.md holds the [[sources]] entry a graph uses to follow it,
+  with its suggested namespace and schema = true.
+rationale: The plan, presentation and brand standards show the [[sources]] entry
+  in their README; the tool UX/UI standard does not. A follower should not have to
+  read a standard's toml to start following it.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0002
+  type: derives_from
+- target: CON-0004
+  type: derives_from
+attrs:
+  origin: ai

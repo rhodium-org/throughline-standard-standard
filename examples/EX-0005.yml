@@ -1,0 +1,13 @@
+uid: EX-0005
+type: example
+status: proposed
+title: A standard with no examples register
+text: conformance/missing-register holds no register of type example. The conformance
+  action fails it.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0003
+  type: verifies
+attrs:
+  origin: ai

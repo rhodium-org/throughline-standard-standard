@@ -1,0 +1,10 @@
+[project]
+name = "rule-without-example (conformance example)"
+format_version = 4
+suggested_namespace = "example"
+
+# The standard this example follows, by path from conformance/rule-without-example/.
+[[sources]]
+namespace = "standard"
+path = "../.."
+schema = true

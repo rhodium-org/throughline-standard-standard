@@ -1,0 +1,21 @@
+uid: RULE-0006
+type: rule
+status: proposed
+title: A conformance check runs in CI
+text: A standard's CI has a job named graph that, on every push to main and every
+  pull request, installs throughline 4.4.0 or later, runs tl check and runs this
+  repository's conformance action. A standard with conformance examples of its own
+  also checks each one there.
+rationale: The required status check on every standard's default branch is graph,
+  so a standard that does not run the check cannot merge. The plan and presentation
+  standards already run tl check and conformance/check.sh in that job.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0003
+  type: derives_from
+- target: CON-0004
+  type: derives_from
+attrs:
+  origin: ai

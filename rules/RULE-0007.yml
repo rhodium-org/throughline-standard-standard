@@ -1,0 +1,20 @@
+uid: RULE-0007
+type: rule
+status: proposed
+title: A standard is public, owned and protected
+text: 'A standard is a public repository with a CODEOWNERS file in .github/ and three
+  rulesets: protect-default-branch (no deletion, no force push), protect-tags (no
+  deletion, no force push on any tag) and require-pr-and-ci (changes by pull request,
+  with graph a required status check).'
+rationale: Followers pin a standard by tag, so a moved or deleted tag silently changes
+  what they follow. Rulesets cannot be had on a private repository on the current
+  plan. The conformance action checks CODEOWNERS; the rulesets live in GitHub settings
+  and are checked when a standard is set up.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0001
+  type: derives_from
+attrs:
+  origin: ai

@@ -1,0 +1,10 @@
+[project]
+name = "long-namespace (conformance example)"
+format_version = 4
+suggested_namespace = "presentation-format"
+
+# The standard this example follows, by path from conformance/long-namespace/.
+[[sources]]
+namespace = "standard"
+path = "../.."
+schema = true

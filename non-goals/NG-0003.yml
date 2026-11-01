@@ -1,0 +1,10 @@
+uid: NG-0003
+type: non_goal
+status: proposed
+title: No change to throughline
+text: throughline keeps suggested_namespace optional and gains no rule about standards;
+  everything this graph requires beyond throughline's own check is checked by this
+  repository's conformance action.
+normative: false
+attrs:
+  origin: ai

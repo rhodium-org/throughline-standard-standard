@@ -1,0 +1,10 @@
+[project]
+name = "missing-register (conformance example)"
+format_version = 4
+suggested_namespace = "example"
+
+# The standard this example follows, by path from conformance/missing-register/.
+[[sources]]
+namespace = "standard"
+path = "../.."
+schema = true

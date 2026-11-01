@@ -1,0 +1,14 @@
+uid: CON-0004
+type: constraint
+status: proposed
+title: Rules about a standard's configuration are checked by this standard's action,
+  not by throughline
+text: A schema source cannot require a key of its follower's [project] table, its
+  registers, its README or its CI. Those rules are enforced by the conformance check
+  this repository publishes, which a standard runs in CI; throughline is not changed
+  to enforce them.
+rationale: 'Decided 2026-11-01: throughline keeps [project] suggested_namespace optional
+  for every graph; this standard makes it mandatory for standards only.'
+normative: true
+attrs:
+  origin: ai

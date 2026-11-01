@@ -1,0 +1,10 @@
+uid: CON-0002
+type: constraint
+status: proposed
+title: A change that would fail a conforming standard is a new major edition
+text: The standard is released as tagged editions, vMAJOR.MINOR.PATCH, that a standard
+  pins with ref. A change that would make a conforming standard fail its check is
+  a new major edition, and its notes say what a standard must change.
+normative: true
+attrs:
+  origin: ai

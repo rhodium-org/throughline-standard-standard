@@ -1,0 +1,10 @@
+[project]
+name = "bad-namespace (conformance example)"
+format_version = 4
+suggested_namespace = "Example_Standard"
+
+# The standard this example follows, by path from conformance/bad-namespace/.
+[[sources]]
+namespace = "standard"
+path = "../.."
+schema = true

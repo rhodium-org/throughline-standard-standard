@@ -1,0 +1,15 @@
+uid: RULE-0005
+type: rule
+status: proposed
+title: Every rule has an example that verifies it
+text: Every live rule in a standard has at least one example item linked to it by
+  verifies. A rule with none fails the check.
+rationale: Conformance is shown, not asserted. Declared as a coverage rule of severity
+  error, so a standard that follows this one inherits it and tl check fails on a
+  rule nothing verifies.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  origin: ai

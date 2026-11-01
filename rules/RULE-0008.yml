@@ -1,0 +1,18 @@
+uid: RULE-0008
+type: rule
+status: proposed
+title: A standard follows this standard as its schema source and redefines nothing
+  it declares
+text: A standard's throughline.toml names this repository in a [[sources]] entry
+  with schema = true, pinned to an edition with ref. It adds its own declarations
+  and never redeclares a type, attribute, link, status or rule declared here.
+rationale: Taking the shape from one source, never copying it, is what stops the
+  drift (throughline SR-0275, SR-0276).
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0002
+  type: derives_from
+attrs:
+  origin: ai

@@ -1,0 +1,10 @@
+uid: NG-0001
+type: non_goal
+status: proposed
+title: Nothing about any standard's subject
+text: 'The standard says nothing about what a particular standard covers: its own
+  item types, attributes, links and rules are its own. This graph fixes the shape
+  a standard is kept in, never its content.'
+normative: false
+attrs:
+  origin: ai

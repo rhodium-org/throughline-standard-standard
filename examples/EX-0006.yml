@@ -1,0 +1,14 @@
+uid: EX-0006
+type: example
+status: proposed
+title: A standard with a rule nothing verifies
+text: conformance/rule-without-example holds a rule with no example verifying it.
+  tl check reports coverage for it, from the rule this standard declares and the
+  example inherits.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0005
+  type: verifies
+attrs:
+  origin: ai

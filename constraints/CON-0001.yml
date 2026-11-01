@@ -1,0 +1,9 @@
+uid: CON-0001
+type: constraint
+status: proposed
+title: Nothing private is in the standard
+text: 'The standard is a public repository and holds nothing private: no personal
+  workstation layout, no private repository name presented as a rule, no secret.'
+normative: true
+attrs:
+  origin: ai

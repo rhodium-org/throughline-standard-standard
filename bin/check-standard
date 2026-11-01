@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""Check a throughline standard against the rules of the standard standard that
+throughline's own check cannot enforce, because a schema source cannot require
+anything of its follower's configuration, registers, README or CI.
+
+    check-standard [PATH] [--defines-the-standard]
+
+PATH is the standard's repository root (default: the current directory). Prints
+one line per check, `ok` or `FAIL`, and exits 1 if any check fails.
+
+`--defines-the-standard` is for rhodium-org/throughline-standard-standard alone,
+which cannot follow itself as a schema source and runs its own action locally.
+
+Standard library only (Python 3.11 or later, for tomllib), so a standard's CI
+needs nothing installed to run it.
+"""
+from __future__ import annotations
+
+import argparse
+import re
+import sys
+from pathlib import Path
+
+if sys.version_info < (3, 11):
+    sys.exit("check-standard needs Python 3.11 or later (for tomllib)")
+import tomllib
+
+REPO = "rhodium-org/throughline-standard-standard"
+STANDARD_NAME = "Throughline standard standard (throughline source)"
+
+# throughline's own grammars: sources._NAMESPACE_RE, uid._PREFIX_RE and
+# union._sanitize_ns. Kept identical so this check agrees with what tl refuses.
+NAMESPACE_RE = re.compile(r"^[a-z][a-z0-9_-]*$")
+PREFIX_RE = re.compile(r"^[A-Z][A-Z0-9]{1,15}$")
+PREFIX_MAX = 16
+
+# RULE-0003: the type each required register holds.
+REQUIRED_REGISTERS = {
+    "intent": "INT",
+    "constraint": "CON",
+    "rule": "RULE",
+    "example": "EX",
+    "non_goal": "NG",
+}
+
+
+def sanitize_namespace(namespace: str) -> str:
+    return re.sub(r"[^A-Z0-9]", "", namespace.upper())
+
+
+def read_registers(root: Path) -> list[tuple[str, str | None, Path]]:
+    """(prefix, type, folder) for every register in the project rooted at `root`,
+    walking as throughline does: skip hidden folders and stop at another
+    project's root."""
+    found = []
+
+    def walk(here: Path) -> None:
+        manifest = here / ".register.yml"
+        if manifest.is_file():
+            text = manifest.read_text(encoding="utf-8")
+            prefix = re.search(r"(?m)^prefix:\s*['\"]?([^'\"\s]+)", text)
+            rtype = re.search(r"(?m)^type:\s*['\"]?([^'\"\s]+)", text)
+            if prefix:
+                found.append((prefix.group(1), rtype.group(1) if rtype else None,
+                              here.relative_to(root)))
+        for child in sorted(here.iterdir()):
+            if (child.is_dir() and not child.name.startswith(".")
+                    and not (child / "throughline.toml").is_file()):
+                walk(child)
+
+    walk(root)
+    return found
+
+
+class Report:
+    def __init__(self) -> None:
+        self.failed = False
+
+    def ok(self, rule: str, what: str) -> None:
+        print(f"ok    {rule} {what}")
+
+    def fail(self, rule: str, what: str) -> None:
+        print(f"FAIL  {rule} {what}")
+        self.failed = True
+
+
+def check_namespace(config: dict, registers, report: Report) -> None:
+    project = config.get("project") or {}
+    namespace = project.get("suggested_namespace")
+    if namespace is None:
+        report.fail("RULE-0001", "throughline.toml declares no [project] suggested_namespace")
+        report.fail("RULE-0002", "cannot be checked without a suggested_namespace")
+        return
+    if not isinstance(namespace, str) or not NAMESPACE_RE.match(namespace):
+        report.fail("RULE-0001", f"[project] suggested_namespace {namespace!r} is not a "
+                    "namespace: lower-case letters, digits, '-' and '_', starting with a letter")
+        report.fail("RULE-0002", "cannot be checked without a valid suggested_namespace")
+        return
+    report.ok("RULE-0001", f"[project] suggested_namespace is {namespace!r}")
+
+    if not registers:
+        report.fail("RULE-0002", "the graph holds no register to prefix")
+        return
+    longest = max(registers, key=lambda r: len(r[0]))[0]
+    mangled = sanitize_namespace(namespace) + longest
+    if len(mangled) > PREFIX_MAX or not PREFIX_RE.match(mangled):
+        report.fail("RULE-0002", f"namespace {namespace!r} + prefix {longest!r} mangles to "
+                    f"{mangled!r} ({len(mangled)} characters), which is not a legal register "
+                    f"prefix (at most {PREFIX_MAX})")
+    else:
+        report.ok("RULE-0002", f"namespace {namespace!r} + longest prefix {longest!r} is "
+                  f"{mangled!r} ({len(mangled)} of {PREFIX_MAX} characters)")
+
+
+def check_registers(registers, report: Report) -> None:
+    by_type: dict[str, list[str]] = {}
+    for prefix, rtype, _folder in registers:
+        if rtype:
+            by_type.setdefault(rtype, []).append(prefix)
+    missing = [t for t in REQUIRED_REGISTERS if t not in by_type]
+    if missing:
+        for t in missing:
+            report.fail("RULE-0003", f"no register holds type {t!r} "
+                        f"(expected {REQUIRED_REGISTERS[t]})")
+    else:
+        held = ", ".join(f"{t} {'/'.join(by_type[t])}" for t in REQUIRED_REGISTERS)
+        report.ok("RULE-0003", f"registers hold {held}")
+
+
+def workflow_texts(root: Path) -> list[tuple[Path, str]]:
+    folder = root / ".github" / "workflows"
+    if not folder.is_dir():
+        return []
+    return [(p, p.read_text(encoding="utf-8"))
+            for p in sorted(folder.iterdir()) if p.suffix in (".yml", ".yaml")]
+
+
+def check_ci(root: Path, defines: bool, report: Report) -> None:
+    uses_action = re.compile(
+        r"(?m)^\s*-?\s*uses:\s*['\"]?" + re.escape(REPO) + r"@" if not defines
+        else r"(?m)^\s*-?\s*uses:\s*['\"]?\./['\"]?\s*$")
+    def has_graph_job(text: str) -> bool:
+        jobs = re.search(r"(?m)^jobs:\s*$", text)
+        return bool(jobs and re.search(r"(?m)^  graph:\s*$", text[jobs.end():]))
+
+    for path, text in workflow_texts(root):
+        if has_graph_job(text) and re.search(r"\btl check\b", text) \
+                and uses_action.search(text):
+            report.ok("RULE-0006", f"{path.relative_to(root)} job graph runs tl check "
+                      "and the conformance action")
+            return
+    want = f"uses: {REPO}@<edition>" if not defines else "uses: ./"
+    report.fail("RULE-0006", "no workflow in .github/workflows has a job named graph that "
+                f"runs tl check and the conformance action ({want})")
+
+
+def check_codeowners(root: Path, report: Report) -> None:
+    path = root / ".github" / "CODEOWNERS"
+    owners = [line for line in path.read_text(encoding="utf-8").splitlines()
+              if line.strip() and not line.lstrip().startswith("#")] if path.is_file() else []
+    if owners:
+        report.ok("RULE-0007", ".github/CODEOWNERS names an owner")
+    else:
+        report.fail("RULE-0007", ".github/CODEOWNERS is missing or names no owner")
+
+
+def follows_this_standard(root: Path, source: dict) -> bool:
+    url = source.get("url")
+    if isinstance(url, str):
+        return re.sub(r"(\.git)?/?$", "", url).endswith("github.com/" + REPO)
+    path = source.get("path")
+    if isinstance(path, str):
+        config = (root / path).resolve() / "throughline.toml"
+        try:
+            name = tomllib.loads(config.read_text(encoding="utf-8"))["project"]["name"]
+        except (OSError, KeyError, tomllib.TOMLDecodeError):
+            return False
+        return name == STANDARD_NAME
+    return False
+
+
+def check_follows(root: Path, config: dict, defines: bool, report: Report) -> None:
+    if defines:
+        report.ok("RULE-0008", "this graph defines the standard, so follows no source")
+        return
+    sources = config.get("sources") or []
+    for source in sources:
+        if isinstance(source, dict) and source.get("schema") is True \
+                and follows_this_standard(root, source):
+            if source.get("url") is not None and not source.get("ref"):
+                report.fail("RULE-0008", f"the [[sources]] entry for {REPO} pins no ref")
+                return
+            report.ok("RULE-0008", f"follows {REPO} as its schema source "
+                      f"(namespace {source.get('namespace')!r})")
+            return
+    report.fail("RULE-0008", f"throughline.toml has no [[sources]] entry for {REPO} "
+                "with schema = true")
+
+
+def check_readme(root: Path, config: dict, report: Report) -> None:
+    path = root / "README.md"
+    if not path.is_file():
+        report.fail("RULE-0009", "README.md is missing")
+        return
+    text = path.read_text(encoding="utf-8")
+    namespace = (config.get("project") or {}).get("suggested_namespace")
+    has_entry = re.search(r"\[\[sources\]\]", text) and re.search(r"schema\s*=\s*true", text)
+    has_ns = isinstance(namespace, str) and re.search(
+        r"namespace\s*=\s*\"" + re.escape(namespace) + "\"", text)
+    if has_entry and has_ns:
+        report.ok("RULE-0009", "README.md shows the [[sources]] entry that follows it")
+    else:
+        report.fail("RULE-0009", "README.md does not show the [[sources]] entry that follows "
+                    "it, with its suggested namespace and schema = true")
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("path", nargs="?", default=".")
+    parser.add_argument("--defines-the-standard", action="store_true",
+                        help=f"only for {REPO} itself")
+    args = parser.parse_args(argv)
+
+    root = Path(args.path).resolve()
+    config_path = root / "throughline.toml"
+    if not config_path.is_file():
+        print(f"FAIL  RULE-0003 {root} holds no throughline.toml at its root")
+        return 1
+    try:
+        config = tomllib.loads(config_path.read_text(encoding="utf-8"))
+    except tomllib.TOMLDecodeError as e:
+        print(f"FAIL  throughline.toml is not valid TOML: {e}")
+        return 1
+
+    print(f"check-standard · {(config.get('project') or {}).get('name', root.name)}")
+    report = Report()
+    registers = read_registers(root)
+    check_namespace(config, registers, report)
+    check_registers(registers, report)
+    check_ci(root, args.defines_the_standard, report)
+    check_codeowners(root, report)
+    check_follows(root, config, args.defines_the_standard, report)
+    check_readme(root, config, report)
+    return 1 if report.failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,17 @@
+uid: INT-0001
+type: intent
+status: proposed
+title: One shape every throughline standard is written in
+text: 'Every throughline standard, whatever its subject, is kept in one shape: the
+  same registers and item types, the same declarations about itself, the same conformance
+  check in CI and the same protection on its repository. A standard takes that shape
+  from this graph as its schema source and never copies it, so the standards stop
+  drifting apart.'
+rationale: 'The operator''s standards (plan, presentation, tool UX/UI, brand and
+  the third-party mirrors) were each set up by hand and have drifted: different registers,
+  different CI, different throughline floors, some with CODEOWNERS and rulesets and
+  some without. A standard that standards follow gives the shape one home, as throughline
+  SR-0275 lets any graph take its schema from a source.'
+normative: false
+attrs:
+  origin: ai

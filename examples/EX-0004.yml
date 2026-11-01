@@ -1,0 +1,14 @@
+uid: EX-0004
+type: example
+status: proposed
+title: A standard whose namespace is too long for its prefixes
+text: conformance/long-namespace declares suggested_namespace presentation-format,
+  which with its RULE register mangles to PRESENTATIONFORMATRULE, 22 characters.
+  The conformance action fails it.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0002
+  type: verifies
+attrs:
+  origin: ai

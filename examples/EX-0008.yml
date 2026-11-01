@@ -1,0 +1,13 @@
+uid: EX-0008
+type: example
+status: proposed
+title: A standard with no code owner
+text: conformance/no-codeowners has no .github/CODEOWNERS. The conformance action
+  fails it.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0007
+  type: verifies
+attrs:
+  origin: ai

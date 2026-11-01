@@ -1,0 +1,20 @@
+uid: RULE-0002
+type: rule
+status: proposed
+title: A standard's namespace and its longest register prefix fit in 16 characters
+text: 'The suggested namespace, upper-cased with every character that is not a letter
+  or digit removed, followed by any register prefix the standard holds, is a legal
+  register prefix: an upper-case letter, then upper-case letters or digits, 16 characters
+  at most.'
+rationale: A follower borrows the standard's items under the namespace, prefixing
+  each register's prefix with it (throughline's union mangler); a combination longer
+  than 16 characters cannot compose, and throughline 4.5.0 refuses to start a graph
+  from such a standard.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0004
+  type: derives_from
+attrs:
+  origin: ai

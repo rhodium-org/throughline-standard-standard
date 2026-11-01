@@ -1,0 +1,11 @@
+uid: NG-0002
+type: non_goal
+status: proposed
+title: No mirrors of third-party texts in this edition
+text: 'Graphs that mirror an outside text as content to compose (WCAG, the Python
+  style guide, SOLID, plain language, the tone and audience graphs) are not standards
+  in this sense: no graph follows them as a schema source. This edition does not
+  cover them.'
+normative: false
+attrs:
+  origin: ai

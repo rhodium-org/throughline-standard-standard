@@ -1,0 +1,11 @@
+uid: RULE-0001
+type: rule
+status: proposed
+title: An example rule
+text: A conforming graph holds at least one item.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  origin: ai

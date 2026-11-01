@@ -1,0 +1,10 @@
+uid: CON-0003
+type: constraint
+status: proposed
+title: Followers run throughline 4.4.0 or later
+text: A standard that follows this one runs throughline 4.4.0 or later, the first
+  release that takes a schema from a source marked schema = true and passes its coverage
+  rules on to followers.
+normative: true
+attrs:
+  origin: ai

@@ -1,0 +1,25 @@
+name: throughline standard conformance
+description: >-
+  Checks a throughline standard against the rules of the standard standard that
+  tl check cannot enforce: a suggested namespace, its length with the longest
+  register prefix, the five registers, a graph job in CI, CODEOWNERS, following
+  this standard as a schema source, and a README that shows how to follow it.
+inputs:
+  path:
+    description: The standard's repository root.
+    default: "."
+  defines-the-standard:
+    description: Only for rhodium-org/throughline-standard-standard itself.
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - name: The standard keeps the standard standard's configuration rules
+      shell: bash
+      env:
+        STANDARD_PATH: ${{ inputs.path }}
+        DEFINES: ${{ inputs.defines-the-standard }}
+      run: |
+        args=("$STANDARD_PATH")
+        if [ "$DEFINES" = "true" ]; then args+=(--defines-the-standard); fi
+        python3 "$GITHUB_ACTION_PATH/bin/check-standard" "${args[@]}"

@@ -1,0 +1,13 @@
+uid: EX-0009
+type: example
+status: proposed
+title: A standard that does not follow this one
+text: conformance/not-following names no source with schema = true that is this standard.
+  The conformance action fails it.
+rationale: 'Conformance is shown, not asserted: CI checks each example with conformance/check.sh.'
+normative: false
+links:
+- target: RULE-0008
+  type: verifies
+attrs:
+  origin: ai

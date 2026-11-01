@@ -1,0 +1,19 @@
+uid: RULE-0001
+type: rule
+status: proposed
+title: Every standard declares the namespace its followers take for it
+text: 'A standard''s throughline.toml declares [project] suggested_namespace: lower-case
+  letters, digits, ''-'' and ''_'', starting with a letter (^[a-z][a-z0-9_-]*$).
+  A graph started from the standard takes that namespace for it.'
+rationale: throughline 4.5.0 (SR-0283) reads suggested_namespace and keeps it optional
+  for every graph; a standard is the one kind of graph that is always followed, so
+  here it is required. Checked by this repository's conformance action, since a schema
+  source cannot require a [project] key.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+- target: CON-0004
+  type: derives_from
+attrs:
+  origin: ai
