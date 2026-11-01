@@ -1,0 +1,27 @@
+uid: LINK-0004
+type: link
+status: ratified
+title: A type builds on exactly one base type
+text: A type builds on exactly one base type.
+normative: true
+links:
+- target: REG-0003
+  type: from
+- target: REG-0008
+  type: to
+- target: LT-0003
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:39Z'
+  fingerprint: sha256:e1a6ea1a60ae4f5db03b4f24d666115586a7922656c6f1a5ac29a797b2e0c655
+  content:
+    type: link
+    text: A type builds on exactly one base type.
+    normative: true
+    derived: false
+    attrs: {}

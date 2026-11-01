@@ -1,0 +1,27 @@
+uid: REG-0007
+type: register
+status: ratified
+title: Link types live in LT
+text: Every standard holds its link_type items in the register LT, folder link-types/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: LT
+  dir: link-types
+  holds: link_type
+  label: Link types
+  scope: followers
+  required: false
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:17Z'
+  fingerprint: sha256:41441661b1ce68c19da9dbdf174099670dafef849afe51ba924193ee65dfb2d4
+  content:
+    type: register
+    text: Every standard holds its link_type items in the register LT, folder link-types/.
+    normative: true
+    derived: false
+    attrs: {}

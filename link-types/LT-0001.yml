@@ -1,0 +1,23 @@
+uid: LT-0001
+type: link_type
+status: ratified
+title: The link type derives_from
+text: The item rests on the target.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: derives_from
+  grounds: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:11Z'
+  fingerprint: sha256:858fa56d07be58a5c2d844428e6a360c14942e590add5afa35b90f46f257120b
+  content:
+    type: link_type
+    text: The item rests on the target.
+    normative: true
+    derived: false
+    attrs: {}

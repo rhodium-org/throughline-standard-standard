@@ -1,0 +1,22 @@
+uid: ENUM-0001
+type: enum
+status: ratified
+title: Register scope
+text: 'One of: followers, this-graph.'
+normative: true
+links:
+- target: BASE-0007
+  type: has_type
+attrs:
+  values: followers, this-graph
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:38Z'
+  fingerprint: sha256:e52ecced71c5e25145dd756c87dd6bd9fa4c09d6aca004d492a6d6c50269f2fb
+  content:
+    type: enum
+    text: 'One of: followers, this-graph.'
+    normative: true
+    derived: false
+    attrs: {}

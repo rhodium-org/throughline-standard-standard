@@ -1,0 +1,26 @@
+uid: LINK-0006
+type: link
+status: ratified
+title: A constraint applies to at least one base type
+text: A constraint applies to at least one base type.
+normative: true
+links:
+- target: REG-0009
+  type: from
+- target: REG-0008
+  type: to
+- target: LT-0001
+  type: via
+attrs:
+  min: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:39Z'
+  fingerprint: sha256:90cb0f4dc908884c2b64dfbafd252fe6b917a0b8c5e91aa520db183405a0e9f3
+  content:
+    type: link
+    text: A constraint applies to at least one base type.
+    normative: true
+    derived: false
+    attrs: {}

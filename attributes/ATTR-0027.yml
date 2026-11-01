@@ -1,0 +1,25 @@
+uid: ATTR-0027
+type: attribute
+status: ratified
+title: A link_type's name
+text: 'A link_type''s name: Name; always.'
+normative: true
+links:
+- target: REG-0007
+  type: belongs_to
+- target: TYPE-0008
+  type: has_type
+attrs:
+  name: name
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:34Z'
+  fingerprint: sha256:736d3784d4a09c64cca3bd4d8dfd72321a56c15e203121024b2424d1b1d15aa5
+  content:
+    type: attribute
+    text: 'A link_type''s name: Name; always.'
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,0 +1,27 @@
+uid: REG-0006
+type: register
+status: ratified
+title: Links live in LINK
+text: Every standard holds its link items in the register LINK, folder links/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: LINK
+  dir: links
+  holds: link
+  label: Links
+  scope: followers
+  required: false
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:17Z'
+  fingerprint: sha256:0072df853652a5dc5f8bb5b0bcd385e574d1a3ed67fc03c2fd10910e3e09b184
+  content:
+    type: register
+    text: Every standard holds its link items in the register LINK, folder links/.
+    normative: true
+    derived: false
+    attrs: {}

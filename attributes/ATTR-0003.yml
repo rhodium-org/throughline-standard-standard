@@ -1,0 +1,25 @@
+uid: ATTR-0003
+type: attribute
+status: ratified
+title: A register's holds
+text: 'A register''s holds: Name; always.'
+normative: true
+links:
+- target: REG-0002
+  type: belongs_to
+- target: TYPE-0008
+  type: has_type
+attrs:
+  name: holds
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:29Z'
+  fingerprint: sha256:0f4ae75f619fc8363bcdf66837f75b27349d702b7b4da5465cb064ed484a78ea
+  content:
+    type: attribute
+    text: 'A register''s holds: Name; always.'
+    normative: true
+    derived: false
+    attrs: {}

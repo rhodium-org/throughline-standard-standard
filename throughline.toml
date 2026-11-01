@@ -1,0 +1,28 @@
+# The throughline meta-standard: the registers, attributes, links and link types
+# every standard declares its followers' shape with, held as items, and the base
+# types every consumer of a standard implements. It follows itself: having no
+# schema source, every declaration it holds applies to it (throughline SR-0285).
+[project]
+name = "Throughline meta-standard"
+format_version = 4
+suggested_namespace = "meta"
+meta_standard = 1
+
+[grounding]
+root_types = ["intent"]
+delivery_roots = ["intent"]
+ai_origins = ["ai", "hybrid"]
+
+[status]
+values = ["proposed", "draft", "ratified", "suspect", "rejected", "deleted"]
+
+[status.roles]
+initial = "draft"
+proposed = "proposed"
+ratified = "ratified"
+invalidated = "rejected"
+suspect = "suspect"
+tombstone = "deleted"
+
+[types.intent]
+normative = false

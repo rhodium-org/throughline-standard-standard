@@ -1,0 +1,36 @@
+uid: BASE-0003
+type: base
+status: ratified
+title: The base type int
+text: 'A whole number in decimal: digits, with a leading - if negative. No +, no
+  leading zero, no point.'
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: int
+  written: 'A whole number in decimal: digits, with a leading - if negative. No +,
+    no leading zero, no point.'
+  compares: numerically
+  valid: |-
+    0
+    12
+    -3
+  invalid: |-
+    +3
+    012
+    1.5
+    1e3
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:06Z'
+  fingerprint: sha256:503de73fbcfdef2d2bf4aba72749defe4a13823d6c73bbbd5e77d758b68cf381
+  content:
+    type: base
+    text: 'A whole number in decimal: digits, with a leading - if negative. No +,
+      no leading zero, no point.'
+    normative: true
+    derived: false
+    attrs: {}

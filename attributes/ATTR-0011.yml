@@ -1,0 +1,25 @@
+uid: ATTR-0011
+type: attribute
+status: ratified
+title: An enum's values
+text: 'An enum''s values: Value list; always.'
+normative: true
+links:
+- target: REG-0004
+  type: belongs_to
+- target: TYPE-0009
+  type: has_type
+attrs:
+  name: values
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:31Z'
+  fingerprint: sha256:961707476febf06b8929502b0cd5f4e629ae16b147b3870427a102cd813c46ec
+  content:
+    type: attribute
+    text: 'An enum''s values: Value list; always.'
+    normative: true
+    derived: false
+    attrs: {}

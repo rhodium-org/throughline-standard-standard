@@ -1,0 +1,29 @@
+uid: LINK-0003
+type: link
+status: ratified
+title: An attribute has exactly one type or value set
+text: An attribute has exactly one type or value set.
+normative: true
+links:
+- target: REG-0005
+  type: from
+- target: REG-0003
+  type: to
+- target: REG-0004
+  type: to
+- target: LT-0003
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:39Z'
+  fingerprint: sha256:70f06e874ff0918d53cde3246339b2ca44e402e241927dcb8650d6a7384a044d
+  content:
+    type: link
+    text: An attribute has exactly one type or value set.
+    normative: true
+    derived: false
+    attrs: {}

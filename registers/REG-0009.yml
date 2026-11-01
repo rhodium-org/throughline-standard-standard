@@ -1,0 +1,27 @@
+uid: REG-0009
+type: register
+status: ratified
+title: Constraints live in CONS
+text: This graph alone holds its constraint items in the register CONS, folder constraints/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: CONS
+  dir: constraints
+  holds: constraint
+  label: Constraints
+  scope: this-graph
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:18Z'
+  fingerprint: sha256:d2a730a843a60d3fa8223f5ec0f9d6e3beae425de68485e485c527f1e7099dcf
+  content:
+    type: register
+    text: This graph alone holds its constraint items in the register CONS, folder
+      constraints/.
+    normative: true
+    derived: false
+    attrs: {}

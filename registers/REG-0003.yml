@@ -1,0 +1,26 @@
+uid: REG-0003
+type: register
+status: ratified
+title: Types live in TYPE
+text: Every standard holds its type items in the register TYPE, folder types/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: TYPE
+  dir: types
+  holds: type
+  label: Types
+  scope: followers
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:16Z'
+  fingerprint: sha256:f935ac8f374b16eb50e88408d51117fba4dce020bcbddc912f7b7720622e03b8
+  content:
+    type: register
+    text: Every standard holds its type items in the register TYPE, folder types/.
+    normative: true
+    derived: false
+    attrs: {}

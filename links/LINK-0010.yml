@@ -1,0 +1,26 @@
+uid: LINK-0010
+type: link
+status: ratified
+title: A register declaration aliases at most one register declaration
+text: A register declaration aliases at most one register declaration.
+normative: true
+links:
+- target: REG-0002
+  type: from
+- target: REG-0002
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:40Z'
+  fingerprint: sha256:239290cd5898857ed01b197ac118fe1d3e784645843495d2e01f94222c4e32ed
+  content:
+    type: link
+    text: A register declaration aliases at most one register declaration.
+    normative: true
+    derived: false
+    attrs: {}

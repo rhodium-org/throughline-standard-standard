@@ -1,0 +1,26 @@
+uid: LINK-0011
+type: link
+status: ratified
+title: An attribute declaration aliases at most one attribute declaration
+text: An attribute declaration aliases at most one attribute declaration.
+normative: true
+links:
+- target: REG-0005
+  type: from
+- target: REG-0005
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:41Z'
+  fingerprint: sha256:2b8932c75530785167cd14eae80af012f554bd76baa4d4b8f6c5edcbb5843a59
+  content:
+    type: link
+    text: An attribute declaration aliases at most one attribute declaration.
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,0 +1,25 @@
+uid: ATTR-0030
+type: attribute
+status: ratified
+title: A base's written
+text: 'A base''s written: Text; always.'
+normative: true
+links:
+- target: REG-0008
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: written
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:35Z'
+  fingerprint: sha256:11a3a677037384825c2a63efd80e099f1e0bdf56c1b2e9a15b67bb60debfb5f7
+  content:
+    type: attribute
+    text: 'A base''s written: Text; always.'
+    normative: true
+    derived: false
+    attrs: {}

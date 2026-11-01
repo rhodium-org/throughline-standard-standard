@@ -1,0 +1,24 @@
+uid: ATTR-0023
+type: attribute
+status: ratified
+title: A link's max
+text: 'A link''s max: Count; optional.'
+normative: true
+links:
+- target: REG-0006
+  type: belongs_to
+- target: TYPE-0005
+  type: has_type
+attrs:
+  name: max
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:33Z'
+  fingerprint: sha256:808de190b0c6d683f0da7a684e7b696d5d88d51e7b917c0b205a441da41d24d7
+  content:
+    type: attribute
+    text: 'A link''s max: Count; optional.'
+    normative: true
+    derived: false
+    attrs: {}

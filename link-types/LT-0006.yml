@@ -1,0 +1,23 @@
+uid: LT-0006
+type: link_type
+status: ratified
+title: The link type via
+text: A link declaration is about links of the target link type.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: via
+  grounds: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:13Z'
+  fingerprint: sha256:66524a4b327e9052eeb33f22c668f06d0a2f475038cc7a7208e0354010bf3707
+  content:
+    type: link_type
+    text: A link declaration is about links of the target link type.
+    normative: true
+    derived: false
+    attrs: {}

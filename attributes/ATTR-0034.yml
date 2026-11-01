@@ -1,0 +1,25 @@
+uid: ATTR-0034
+type: attribute
+status: ratified
+title: A constraint's name
+text: 'A constraint''s name: Name; always.'
+normative: true
+links:
+- target: REG-0009
+  type: belongs_to
+- target: TYPE-0008
+  type: has_type
+attrs:
+  name: name
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:36Z'
+  fingerprint: sha256:1c49860a614e92a4b05939e466ef854d88b5c3e3607e7bff7b4502776521d5c2
+  content:
+    type: attribute
+    text: 'A constraint''s name: Name; always.'
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,0 +1,27 @@
+uid: LINK-0005
+type: link
+status: ratified
+title: A value set builds on the base type enum
+text: A value set builds on the base type enum.
+normative: true
+links:
+- target: REG-0004
+  type: from
+- target: REG-0008
+  type: to
+- target: LT-0003
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:39Z'
+  fingerprint: sha256:7ce69de0f1eb09ba06526b32e587984bf453117d1bfc1fee732ad7e4a7d063f7
+  content:
+    type: link
+    text: A value set builds on the base type enum.
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,0 +1,24 @@
+uid: ATTR-0036
+type: attribute
+status: ratified
+title: A constraint's valid
+text: 'A constraint''s valid: Text; optional.'
+normative: true
+links:
+- target: REG-0009
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: valid
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:36Z'
+  fingerprint: sha256:c3ccc681d01befdc875f39a38405f5296da9b5bbf9380d19b3692bb7381e1f39
+  content:
+    type: attribute
+    text: 'A constraint''s valid: Text; optional.'
+    normative: true
+    derived: false
+    attrs: {}

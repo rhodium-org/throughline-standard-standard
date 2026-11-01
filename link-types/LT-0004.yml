@@ -1,0 +1,23 @@
+uid: LT-0004
+type: link_type
+status: ratified
+title: The link type from
+text: A link declaration runs from links on items of the target register.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: from
+  grounds: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:12Z'
+  fingerprint: sha256:46b8362448b7633cb64f6d8599aca7ff96ef7fd597d0effe4a83c1f7ad1a19f0
+  content:
+    type: link_type
+    text: A link declaration runs from links on items of the target register.
+    normative: true
+    derived: false
+    attrs: {}

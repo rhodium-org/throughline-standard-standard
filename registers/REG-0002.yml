@@ -1,0 +1,26 @@
+uid: REG-0002
+type: register
+status: ratified
+title: Registers live in REG
+text: Every standard holds its register items in the register REG, folder registers/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: REG
+  dir: registers
+  holds: register
+  label: Registers
+  scope: followers
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:16Z'
+  fingerprint: sha256:1f378c7e1d156883563b0d0164b1a40315ebde34b1417d24cdca2250481590c7
+  content:
+    type: register
+    text: Every standard holds its register items in the register REG, folder registers/.
+    normative: true
+    derived: false
+    attrs: {}

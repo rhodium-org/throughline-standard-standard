@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      # 4.6.0 reads declarations from items (throughline SR-0285) and implements
+      # meta-standard version 1, which this graph is.
+      - run: pip install "throughline>=4.6.0"
+      # Strict: nothing merges while an item is still proposed.
+      - name: The meta-standard's graph is sound
+        run: tl check --strict

@@ -1,0 +1,22 @@
+uid: ENUM-0002
+type: enum
+status: ratified
+title: Comparison
+text: 'One of: no, numerically, by-date.'
+normative: true
+links:
+- target: BASE-0007
+  type: has_type
+attrs:
+  values: no, numerically, by-date
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:38Z'
+  fingerprint: sha256:9b2e3736e8792cccf1753af800850d8c02d7dc75920e9263547eb4269b333b3f
+  content:
+    type: enum
+    text: 'One of: no, numerically, by-date.'
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,0 +1,32 @@
+uid: BASE-0005
+type: base
+status: ratified
+title: The base type bool
+text: Exactly true or false, lower case.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: bool
+  written: Exactly true or false, lower case.
+  compares: 'no'
+  valid: |-
+    true
+    false
+  invalid: |-
+    yes
+    no
+    True
+    1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:07Z'
+  fingerprint: sha256:e5b586e1cc96ea6805da06f306c35e982532ba7a37155a2a9cb6f87ace3d4e95
+  content:
+    type: base
+    text: Exactly true or false, lower case.
+    normative: true
+    derived: false
+    attrs: {}

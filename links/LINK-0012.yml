@@ -1,0 +1,26 @@
+uid: LINK-0012
+type: link
+status: ratified
+title: A link type declaration aliases at most one link type declaration
+text: A link type declaration aliases at most one link type declaration.
+normative: true
+links:
+- target: REG-0007
+  type: from
+- target: REG-0007
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:41Z'
+  fingerprint: sha256:9f3cb4b205a455eff762f7d82d91a1ca41e9f72fc57e704cfb3d059993772b0d
+  content:
+    type: link
+    text: A link type declaration aliases at most one link type declaration.
+    normative: true
+    derived: false
+    attrs: {}

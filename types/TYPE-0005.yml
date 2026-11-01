@@ -1,0 +1,22 @@
+uid: TYPE-0005
+type: type
+status: ratified
+title: Count
+text: A int with min 0.
+normative: true
+links:
+- target: BASE-0003
+  type: has_type
+attrs:
+  min: '0'
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:42Z'
+  fingerprint: sha256:6f863c6e1115899a79225aed8d06f15b33a3f12e8d3a4817704c4185092371ba
+  content:
+    type: type
+    text: A int with min 0.
+    normative: true
+    derived: false
+    attrs: {}

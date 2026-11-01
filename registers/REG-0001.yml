@@ -1,0 +1,29 @@
+uid: REG-0001
+type: register
+status: ratified
+title: Intent live in INT
+text: Every standard holds its intent items in the register INT, folder vision/,
+  exactly one of them.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: INT
+  dir: vision
+  holds: intent
+  label: Intent
+  scope: followers
+  exactly_one: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:15Z'
+  fingerprint: sha256:59196f064915e58c4a985d59c6890bd6fb8a1ea2d118b1f2fef5a9ca4381e7ae
+  content:
+    type: register
+    text: Every standard holds its intent items in the register INT, folder vision/,
+      exactly one of them.
+    normative: true
+    derived: false
+    attrs: {}

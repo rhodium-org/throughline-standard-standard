@@ -1,0 +1,27 @@
+uid: REG-0004
+type: register
+status: ratified
+title: Value sets live in ENUM
+text: Every standard holds its enum items in the register ENUM, folder enums/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: ENUM
+  dir: enums
+  holds: enum
+  label: Value sets
+  scope: followers
+  required: false
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:16Z'
+  fingerprint: sha256:50f30a30712427d85e4f4c9bb0f0a2a10bb4d3e324cfc3f4e7324044e5a1ad2b
+  content:
+    type: register
+    text: Every standard holds its enum items in the register ENUM, folder enums/.
+    normative: true
+    derived: false
+    attrs: {}

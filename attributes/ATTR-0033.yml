@@ -1,0 +1,25 @@
+uid: ATTR-0033
+type: attribute
+status: ratified
+title: A base's invalid
+text: 'A base''s invalid: Text; always.'
+normative: true
+links:
+- target: REG-0008
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: invalid
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:36Z'
+  fingerprint: sha256:807e74f61f9e3d28d59e7d5430cebc1279413c412ccbd669606597cdc5de53f8
+  content:
+    type: attribute
+    text: 'A base''s invalid: Text; always.'
+    normative: true
+    derived: false
+    attrs: {}
