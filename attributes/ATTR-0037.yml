@@ -1,6 +1,6 @@
 uid: ATTR-0037
 type: attribute
-status: proposed
+status: ratified
 title: A constraint's invalid
 text: 'A constraint''s invalid: Text; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: invalid
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:37Z'
+  fingerprint: sha256:0817b4be9b57b068b14ee0d127cf3f5015f3ece05fe8966366eebecae5486d2b
+  content:
+    type: attribute
+    text: 'A constraint''s invalid: Text; optional.'
+    normative: true
+    derived: false
+    attrs: {}

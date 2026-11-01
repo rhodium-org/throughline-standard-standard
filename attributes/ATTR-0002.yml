@@ -1,6 +1,6 @@
 uid: ATTR-0002
 type: attribute
-status: proposed
+status: ratified
 title: A register's dir
 text: 'A register''s dir: Folder; always.'
 normative: true
@@ -13,3 +13,13 @@ attrs:
   name: dir
   required: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:29Z'
+  fingerprint: sha256:e6f3a51e16f004f746175714db8dfdec796d787c8b1645b3f5c29eb1f1fcc8a7
+  content:
+    type: attribute
+    text: 'A register''s dir: Folder; always.'
+    normative: true
+    derived: false
+    attrs: {}

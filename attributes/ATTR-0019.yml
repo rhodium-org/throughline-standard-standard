@@ -1,6 +1,6 @@
 uid: ATTR-0019
 type: attribute
-status: proposed
+status: ratified
 title: An attribute's required when
 text: 'An attribute''s required when: Condition; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: required_when
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:32Z'
+  fingerprint: sha256:a435fe99b5f34fe104383639bcef6e9da5d685ca43cec44e46777d2e96cee95c
+  content:
+    type: attribute
+    text: 'An attribute''s required when: Condition; optional.'
+    normative: true
+    derived: false
+    attrs: {}

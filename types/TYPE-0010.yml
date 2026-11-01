@@ -1,6 +1,6 @@
 uid: TYPE-0010
 type: type
-status: proposed
+status: ratified
 title: Condition
 text: A string with pattern ^[A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>)
   [^ ()]+|(in|not in) [(][^()]+[)])( (and|or) [A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>)
@@ -14,3 +14,15 @@ attrs:
     [(][^()]+[)])( (and|or) [A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>) [^
     ()]+|(in|not in) [(][^()]+[)]))*$
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:44Z'
+  fingerprint: sha256:15e30cbe9ee70de3817db8b980f3ec37e609fea7768a86711615944e1a0c1cc9
+  content:
+    type: type
+    text: A string with pattern ^[A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>)
+      [^ ()]+|(in|not in) [(][^()]+[)])( (and|or) [A-Z][A-Z0-9]*[.][a-z][a-z0-9_]*
+      ((==|!=|<=|>=|<|>) [^ ()]+|(in|not in) [(][^()]+[)]))*$.
+    normative: true
+    derived: false
+    attrs: {}

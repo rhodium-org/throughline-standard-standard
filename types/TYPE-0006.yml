@@ -1,6 +1,6 @@
 uid: TYPE-0006
 type: type
-status: proposed
+status: ratified
 title: Prefix
 text: A string with pattern ^[A-Z][A-Z0-9]{1,7}$.
 normative: true
@@ -10,3 +10,13 @@ links:
 attrs:
   pattern: ^[A-Z][A-Z0-9]{1,7}$
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:43Z'
+  fingerprint: sha256:38691871fe24e01324fe1cea7bbbd2f8c93e4afc4ced54ffaf63b44625bb0b61
+  content:
+    type: type
+    text: A string with pattern ^[A-Z][A-Z0-9]{1,7}$.
+    normative: true
+    derived: false
+    attrs: {}

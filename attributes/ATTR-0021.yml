@@ -1,6 +1,6 @@
 uid: ATTR-0021
 type: attribute
-status: proposed
+status: ratified
 title: An attribute's list
 text: 'An attribute''s list: Flag; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: list
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:33Z'
+  fingerprint: sha256:078c079baee5e480c463e48816a5359c6b0bc3a03e0b4506a9e8079728277a72
+  content:
+    type: attribute
+    text: 'An attribute''s list: Flag; optional.'
+    normative: true
+    derived: false
+    attrs: {}

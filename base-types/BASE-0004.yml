@@ -1,6 +1,6 @@
 uid: BASE-0004
 type: base
-status: proposed
+status: ratified
 title: The base type float
 text: 'A number in decimal, with a point or without: digits, with a leading - if
   negative. No +, no exponent.'
@@ -23,3 +23,14 @@ attrs:
     true
     "1.5"
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:06Z'
+  fingerprint: sha256:53741be3e995c589a06bd3eee44ccc8521e158cf2c690446a744cfae6e7be772
+  content:
+    type: base
+    text: 'A number in decimal, with a point or without: digits, with a leading -
+      if negative. No +, no exponent.'
+    normative: true
+    derived: false
+    attrs: {}

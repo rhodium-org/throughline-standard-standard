@@ -1,6 +1,6 @@
 uid: CONS-0004
 type: constraint
-status: proposed
+status: ratified
 title: The constraint list
 text: The attribute holds a YAML list of values, each valid for its type. An empty
   list is left out instead.
@@ -27,3 +27,14 @@ attrs:
     plain, panels
     []
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:38Z'
+  fingerprint: sha256:8d79bea2326c255e718a0bc22e3dd98b9e33e7a949e13f81484eceb8580a52e9
+  content:
+    type: constraint
+    text: The attribute holds a YAML list of values, each valid for its type. An
+      empty list is left out instead.
+    normative: true
+    derived: false
+    attrs: {}

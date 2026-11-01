@@ -1,6 +1,6 @@
 uid: ATTR-0001
 type: attribute
-status: proposed
+status: ratified
 title: A register's prefix
 text: 'A register''s prefix: Prefix; always.'
 normative: true
@@ -13,3 +13,13 @@ attrs:
   name: prefix
   required: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:28Z'
+  fingerprint: sha256:e3ae3ed3de9b2d8c3dc6db4b6e12fa8a5abb78d12b80be244f0474282c0d6d98
+  content:
+    type: attribute
+    text: 'A register''s prefix: Prefix; always.'
+    normative: true
+    derived: false
+    attrs: {}

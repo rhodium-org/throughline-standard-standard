@@ -1,6 +1,6 @@
 uid: ATTR-0008
 type: attribute
-status: proposed
+status: ratified
 title: A type's pattern
 text: 'A type''s pattern: Line; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: pattern
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:30Z'
+  fingerprint: sha256:c12a2bb82f9b835db83926a740285faa64fed1085fb91989fb843d8fa5d869e8
+  content:
+    type: attribute
+    text: 'A type''s pattern: Line; optional.'
+    normative: true
+    derived: false
+    attrs: {}

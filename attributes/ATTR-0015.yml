@@ -1,6 +1,6 @@
 uid: ATTR-0015
 type: attribute
-status: proposed
+status: ratified
 title: A link's scope
 text: 'A link''s scope: Register scope; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: scope
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:32Z'
+  fingerprint: sha256:9ac12ca63de52aa6ca73443289abd0a980b3220b65f1fd36958404a9d78aa268
+  content:
+    type: attribute
+    text: 'A link''s scope: Register scope; optional.'
+    normative: true
+    derived: false
+    attrs: {}

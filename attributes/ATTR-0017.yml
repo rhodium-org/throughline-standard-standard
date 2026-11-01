@@ -1,6 +1,6 @@
 uid: ATTR-0017
 type: attribute
-status: proposed
+status: ratified
 title: An attribute's name
 text: 'An attribute''s name: Name; always.'
 normative: true
@@ -13,3 +13,13 @@ attrs:
   name: name
   required: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:32Z'
+  fingerprint: sha256:66d1ae7ac4e8c1007bc035bfbfd7633a415a5cfeaff1cb6ecfa6322f4778acf6
+  content:
+    type: attribute
+    text: 'An attribute''s name: Name; always.'
+    normative: true
+    derived: false
+    attrs: {}

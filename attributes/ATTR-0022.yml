@@ -1,6 +1,6 @@
 uid: ATTR-0022
 type: attribute
-status: proposed
+status: ratified
 title: A link's min
 text: 'A link''s min: Count; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: min
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:33Z'
+  fingerprint: sha256:f09b8c9e25c0420819c453ee837ef5c87d07a36b161181449a1a711fd06d414e
+  content:
+    type: attribute
+    text: 'A link''s min: Count; optional.'
+    normative: true
+    derived: false
+    attrs: {}

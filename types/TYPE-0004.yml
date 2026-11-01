@@ -1,6 +1,6 @@
 uid: TYPE-0004
 type: type
-status: proposed
+status: ratified
 title: Bound
 text: A string.
 normative: true
@@ -9,3 +9,13 @@ links:
   type: has_type
 attrs:
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:42Z'
+  fingerprint: sha256:8496a89bf84ca3012b3e1faff98dd6869fdcf9d77ba3c949e110d93f2ca322e9
+  content:
+    type: type
+    text: A string.
+    normative: true
+    derived: false
+    attrs: {}

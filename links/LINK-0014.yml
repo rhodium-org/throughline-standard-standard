@@ -1,6 +1,6 @@
 uid: LINK-0014
 type: link
-status: proposed
+status: ratified
 title: Every base type serves the intent
 text: Every base type serves the intent.
 normative: true
@@ -14,3 +14,13 @@ links:
 attrs:
   min: 1
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:41Z'
+  fingerprint: sha256:8581e3df3ded885786e5d56465807f242d33987d930cfdf454d1850fd3d762ce
+  content:
+    type: link
+    text: Every base type serves the intent.
+    normative: true
+    derived: false
+    attrs: {}

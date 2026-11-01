@@ -1,6 +1,6 @@
 uid: LINK-0001
 type: link
-status: proposed
+status: ratified
 title: Every register serves the intent
 text: Every register serves the intent.
 normative: true
@@ -14,3 +14,13 @@ links:
 attrs:
   min: 1
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:38Z'
+  fingerprint: sha256:44f5188df487dbb366f71c04110405fc00d7185ede0c6beb48a8f7281f046b57
+  content:
+    type: link
+    text: Every register serves the intent.
+    normative: true
+    derived: false
+    attrs: {}

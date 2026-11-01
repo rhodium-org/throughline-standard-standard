@@ -1,6 +1,6 @@
 uid: ATTR-0026
 type: attribute
-status: proposed
+status: ratified
 title: A link's from when
 text: 'A link''s from when: Condition; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: from_when
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:34Z'
+  fingerprint: sha256:347b29c9f3da0d857dffbbd46224c2a3ef3b286ff0fcb0e2e0bd9681432f3a3b
+  content:
+    type: attribute
+    text: 'A link''s from when: Condition; optional.'
+    normative: true
+    derived: false
+    attrs: {}

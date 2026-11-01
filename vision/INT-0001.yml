@@ -1,6 +1,6 @@
 uid: INT-0001
 type: intent
-status: proposed
+status: ratified
 title: Every standard is read the same way by every consumer
 text: A standard is read by apps written in different languages and by the AI writing
   the graphs that follow it. This graph declares, as items, the registers and attributes
@@ -10,3 +10,18 @@ text: A standard is read by apps written in different languages and by the AI wr
 normative: false
 attrs:
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:03Z'
+  fingerprint: sha256:1958994d252b412d34677c448542ce760f421720658b7f9a18763407aff17a24
+  content:
+    type: intent
+    text: A standard is read by apps written in different languages and by the AI
+      writing the graphs that follow it. This graph declares, as items, the registers
+      and attributes every standard holds, itself included, and the few base types
+      every consumer implements, each with values every implementation is tested
+      against. A standard can never add a base type; adding one is a new version
+      of this graph.
+    normative: false
+    derived: false
+    attrs: {}

@@ -1,6 +1,6 @@
 uid: BASE-0001
 type: base
-status: proposed
+status: ratified
 title: The base type string
 text: 'One line of text. No line break. Not empty: an attribute with nothing to say
   is left out.'
@@ -20,3 +20,14 @@ attrs:
     (empty)
     a value with a\nline break
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:06Z'
+  fingerprint: sha256:52de2d414d32b3b12e3243f5b7709aaece4dba5a62b1905e147fa77059b3a5a7
+  content:
+    type: base
+    text: 'One line of text. No line break. Not empty: an attribute with nothing
+      to say is left out.'
+    normative: true
+    derived: false
+    attrs: {}

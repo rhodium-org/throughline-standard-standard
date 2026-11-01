@@ -1,6 +1,6 @@
 uid: ATTR-0010
 type: attribute
-status: proposed
+status: ratified
 title: A type's max
 text: 'A type''s max: Bound; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: max
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:30Z'
+  fingerprint: sha256:690186081fa67d753304b2ebdf489fa1fdedf9345dcdfbf5d0d6d7e8673799b9
+  content:
+    type: attribute
+    text: 'A type''s max: Bound; optional.'
+    normative: true
+    derived: false
+    attrs: {}

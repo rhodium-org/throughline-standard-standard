@@ -1,6 +1,6 @@
 uid: TYPE-0008
 type: type
-status: proposed
+status: ratified
 title: Name
 text: A string with pattern ^[a-z][a-z0-9_]*$.
 normative: true
@@ -10,3 +10,13 @@ links:
 attrs:
   pattern: ^[a-z][a-z0-9_]*$
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:43Z'
+  fingerprint: sha256:47c3db0946e85738e378438b8b2a7c019b4ebf9b7634ad2fc14243f0d0ee38fd
+  content:
+    type: type
+    text: A string with pattern ^[a-z][a-z0-9_]*$.
+    normative: true
+    derived: false
+    attrs: {}

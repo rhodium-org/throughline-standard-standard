@@ -1,6 +1,6 @@
 uid: ATTR-0031
 type: attribute
-status: proposed
+status: ratified
 title: A base's compares
 text: 'A base''s compares: Comparison; always.'
 normative: true
@@ -13,3 +13,13 @@ attrs:
   name: compares
   required: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:35Z'
+  fingerprint: sha256:587a433962ac02c82e1b60b27eeec5c8b327ca9bde5085aa7713761d4d7e48fc
+  content:
+    type: attribute
+    text: 'A base''s compares: Comparison; always.'
+    normative: true
+    derived: false
+    attrs: {}

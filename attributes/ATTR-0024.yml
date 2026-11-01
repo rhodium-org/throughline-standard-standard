@@ -1,6 +1,6 @@
 uid: ATTR-0024
 type: attribute
-status: proposed
+status: ratified
 title: A link's per target min
 text: 'A link''s per target min: Count; optional.'
 normative: true
@@ -12,3 +12,13 @@ links:
 attrs:
   name: per_target_min
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:34Z'
+  fingerprint: sha256:36a1a7944a89f51bd1e4704e67d76f48a113b44eccf473138d439dd5b5442f3f
+  content:
+    type: attribute
+    text: 'A link''s per target min: Count; optional.'
+    normative: true
+    derived: false
+    attrs: {}

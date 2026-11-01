@@ -1,6 +1,6 @@
 uid: CONS-0003
 type: constraint
-status: proposed
+status: ratified
 title: The constraint pattern
 text: 'The whole value matches this pattern. Only this subset, which reads the same
   in Python and JavaScript: ^ and $ at the ends, literal characters, [abc] [a-z]
@@ -24,3 +24,16 @@ attrs:
     (?i)^abc$
     ^(?=a)
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:37Z'
+  fingerprint: sha256:82fb7e5a947c5bc5df38fe5cb54671438d582d7b99794950ca0a936be812ec5e
+  content:
+    type: constraint
+    text: 'The whole value matches this pattern. Only this subset, which reads the
+      same in Python and JavaScript: ^ and $ at the ends, literal characters, [abc]
+      [a-z] [^a-z], ., ? * + {m} {m,n}, | and ( ). Refused: \d \w \s \b (they differ
+      between languages), lookaround, backreferences, flags.'
+    normative: true
+    derived: false
+    attrs: {}

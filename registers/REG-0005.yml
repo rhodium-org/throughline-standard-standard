@@ -1,6 +1,6 @@
 uid: REG-0005
 type: register
-status: proposed
+status: ratified
 title: Attributes live in ATTR
 text: Every standard holds its attribute items in the register ATTR, folder attributes/.
 normative: true
@@ -14,3 +14,13 @@ attrs:
   label: Attributes
   scope: followers
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:16Z'
+  fingerprint: sha256:d33a2d33b63b78692cb7d40cd9e5c59ca1b99eea24fcecdeeab8ecdb97bbb57e
+  content:
+    type: register
+    text: Every standard holds its attribute items in the register ATTR, folder attributes/.
+    normative: true
+    derived: false
+    attrs: {}

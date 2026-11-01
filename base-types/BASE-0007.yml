@@ -1,6 +1,6 @@
 uid: BASE-0007
 type: base
-status: proposed
+status: ratified
 title: The base type enum
 text: Exactly one of the values its ENUM lists, same case.
 normative: true
@@ -16,3 +16,13 @@ attrs:
     Person (ENUM: person, none)
     (empty)
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:07Z'
+  fingerprint: sha256:8a5668eb1de8165aaf9a743f44afa695efaf2bfda5a532a8542f5d18764df51e
+  content:
+    type: base
+    text: Exactly one of the values its ENUM lists, same case.
+    normative: true
+    derived: false
+    attrs: {}

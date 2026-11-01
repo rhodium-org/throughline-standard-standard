@@ -1,6 +1,6 @@
 uid: CONS-0002
 type: constraint
-status: proposed
+status: ratified
 title: The constraint max
 text: The value is at most this. Compared as its base type compares.
 normative: true
@@ -17,3 +17,13 @@ attrs:
   valid: 'max 5: 5, 1'
   invalid: 'max 5: 6'
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:37Z'
+  fingerprint: sha256:fa74017c07c951b9202697e14d27a45880c74c307d538aa05ce15f2ff94217b3
+  content:
+    type: constraint
+    text: The value is at most this. Compared as its base type compares.
+    normative: true
+    derived: false
+    attrs: {}

@@ -1,6 +1,6 @@
 uid: LT-0007
 type: link_type
-status: proposed
+status: ratified
 title: The link type aliases
 text: A follower's declaration names, under its own name, one its standard makes
   (SR-0299).
@@ -12,3 +12,14 @@ attrs:
   name: aliases
   grounds: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:13Z'
+  fingerprint: sha256:105c77326a7611c1fcf523029f42b306191a0a66b82c180ccec88457c7b6d4ae
+  content:
+    type: link_type
+    text: A follower's declaration names, under its own name, one its standard makes
+      (SR-0299).
+    normative: true
+    derived: false
+    attrs: {}

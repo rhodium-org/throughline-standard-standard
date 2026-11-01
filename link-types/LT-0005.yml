@@ -1,6 +1,6 @@
 uid: LT-0005
 type: link_type
-status: proposed
+status: ratified
 title: The link type to
 text: A link declaration runs to items of the target register (one link per register
   allowed).
@@ -12,3 +12,14 @@ attrs:
   name: to
   grounds: true
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  at: '2026-11-01T17:36:12Z'
+  fingerprint: sha256:720cf8c95ed8824afa7e307ae08272fc2bcc0456c2e170270e5688f3bf88ecbd
+  content:
+    type: link_type
+    text: A link declaration runs to items of the target register (one link per register
+      allowed).
+    normative: true
+    derived: false
+    attrs: {}
