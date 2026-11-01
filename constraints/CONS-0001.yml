@@ -1,0 +1,19 @@
+uid: CONS-0001
+type: constraint
+status: proposed
+title: The constraint min
+text: The value is at least this. Compared as its base type compares.
+normative: true
+links:
+- target: BASE-0003
+  type: derives_from
+- target: BASE-0004
+  type: derives_from
+- target: BASE-0006
+  type: derives_from
+attrs:
+  name: min
+  meaning: The value is at least this. Compared as its base type compares.
+  valid: 'min 1: 1, 7'
+  invalid: 'min 1: 0, -2'
+  origin: ai

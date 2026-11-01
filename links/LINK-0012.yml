@@ -1,0 +1,16 @@
+uid: LINK-0012
+type: link
+status: proposed
+title: A link type declaration aliases at most one link type declaration
+text: A link type declaration aliases at most one link type declaration.
+normative: true
+links:
+- target: REG-0007
+  type: from
+- target: REG-0007
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai

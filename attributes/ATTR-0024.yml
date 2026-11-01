@@ -1,0 +1,14 @@
+uid: ATTR-0024
+type: attribute
+status: proposed
+title: A link's per target min
+text: 'A link''s per target min: Count; optional.'
+normative: true
+links:
+- target: REG-0006
+  type: belongs_to
+- target: TYPE-0005
+  type: has_type
+attrs:
+  name: per_target_min
+  origin: ai

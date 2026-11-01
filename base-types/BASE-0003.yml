@@ -1,0 +1,25 @@
+uid: BASE-0003
+type: base
+status: proposed
+title: The base type int
+text: 'A whole number in decimal: digits, with a leading - if negative. No +, no
+  leading zero, no point.'
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: int
+  written: 'A whole number in decimal: digits, with a leading - if negative. No +,
+    no leading zero, no point.'
+  compares: numerically
+  valid: |-
+    0
+    12
+    -3
+  invalid: |-
+    +3
+    012
+    1.5
+    1e3
+  origin: ai

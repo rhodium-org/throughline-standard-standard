@@ -1,0 +1,17 @@
+uid: REG-0006
+type: register
+status: proposed
+title: Links live in LINK
+text: Every standard holds its link items in the register LINK, folder links/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: LINK
+  dir: links
+  holds: link
+  label: Links
+  scope: followers
+  required: false
+  origin: ai

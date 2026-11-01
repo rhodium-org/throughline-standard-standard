@@ -1,0 +1,12 @@
+uid: INT-0001
+type: intent
+status: proposed
+title: Every standard is read the same way by every consumer
+text: A standard is read by apps written in different languages and by the AI writing
+  the graphs that follow it. This graph declares, as items, the registers and attributes
+  every standard holds, itself included, and the few base types every consumer implements,
+  each with values every implementation is tested against. A standard can never add
+  a base type; adding one is a new version of this graph.
+normative: false
+attrs:
+  origin: ai

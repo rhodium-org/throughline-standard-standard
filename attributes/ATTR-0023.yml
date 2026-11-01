@@ -1,0 +1,14 @@
+uid: ATTR-0023
+type: attribute
+status: proposed
+title: A link's max
+text: 'A link''s max: Count; optional.'
+normative: true
+links:
+- target: REG-0006
+  type: belongs_to
+- target: TYPE-0005
+  type: has_type
+attrs:
+  name: max
+  origin: ai

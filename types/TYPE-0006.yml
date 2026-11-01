@@ -1,0 +1,12 @@
+uid: TYPE-0006
+type: type
+status: proposed
+title: Prefix
+text: A string with pattern ^[A-Z][A-Z0-9]{1,7}$.
+normative: true
+links:
+- target: BASE-0001
+  type: has_type
+attrs:
+  pattern: ^[A-Z][A-Z0-9]{1,7}$
+  origin: ai

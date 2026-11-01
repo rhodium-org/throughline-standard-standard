@@ -1,0 +1,13 @@
+uid: LT-0004
+type: link_type
+status: proposed
+title: The link type from
+text: A link declaration runs from links on items of the target register.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: from
+  grounds: true
+  origin: ai

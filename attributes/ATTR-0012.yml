@@ -1,0 +1,14 @@
+uid: ATTR-0012
+type: attribute
+status: proposed
+title: An attribute's scope
+text: 'An attribute''s scope: Register scope; optional.'
+normative: true
+links:
+- target: REG-0005
+  type: belongs_to
+- target: ENUM-0001
+  type: has_type
+attrs:
+  name: scope
+  origin: ai

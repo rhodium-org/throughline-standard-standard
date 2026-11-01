@@ -1,0 +1,15 @@
+uid: ATTR-0032
+type: attribute
+status: proposed
+title: A base's valid
+text: 'A base''s valid: Text; always.'
+normative: true
+links:
+- target: REG-0008
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: valid
+  required: true
+  origin: ai

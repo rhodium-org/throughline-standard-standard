@@ -1,0 +1,16 @@
+uid: LINK-0006
+type: link
+status: proposed
+title: A constraint applies to at least one base type
+text: A constraint applies to at least one base type.
+normative: true
+links:
+- target: REG-0009
+  type: from
+- target: REG-0008
+  type: to
+- target: LT-0001
+  type: via
+attrs:
+  min: 1
+  origin: ai

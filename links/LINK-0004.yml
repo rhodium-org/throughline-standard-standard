@@ -1,0 +1,17 @@
+uid: LINK-0004
+type: link
+status: proposed
+title: A type builds on exactly one base type
+text: A type builds on exactly one base type.
+normative: true
+links:
+- target: REG-0003
+  type: from
+- target: REG-0008
+  type: to
+- target: LT-0003
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai

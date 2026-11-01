@@ -1,0 +1,14 @@
+uid: ATTR-0008
+type: attribute
+status: proposed
+title: A type's pattern
+text: 'A type''s pattern: Line; optional.'
+normative: true
+links:
+- target: REG-0003
+  type: belongs_to
+- target: TYPE-0001
+  type: has_type
+attrs:
+  name: pattern
+  origin: ai

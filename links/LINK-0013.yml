@@ -1,0 +1,16 @@
+uid: LINK-0013
+type: link
+status: proposed
+title: Every link type serves the intent
+text: Every link type serves the intent.
+normative: true
+links:
+- target: REG-0007
+  type: from
+- target: REG-0001
+  type: to
+- target: LT-0001
+  type: via
+attrs:
+  min: 1
+  origin: ai

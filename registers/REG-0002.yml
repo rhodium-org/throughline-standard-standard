@@ -1,0 +1,16 @@
+uid: REG-0002
+type: register
+status: proposed
+title: Registers live in REG
+text: Every standard holds its register items in the register REG, folder registers/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: REG
+  dir: registers
+  holds: register
+  label: Registers
+  scope: followers
+  origin: ai

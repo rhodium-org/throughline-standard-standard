@@ -1,0 +1,12 @@
+uid: ENUM-0002
+type: enum
+status: proposed
+title: Comparison
+text: 'One of: no, numerically, by-date.'
+normative: true
+links:
+- target: BASE-0007
+  type: has_type
+attrs:
+  values: no, numerically, by-date
+  origin: ai

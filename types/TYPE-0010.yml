@@ -1,0 +1,16 @@
+uid: TYPE-0010
+type: type
+status: proposed
+title: Condition
+text: A string with pattern ^[A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>)
+  [^ ()]+|(in|not in) [(][^()]+[)])( (and|or) [A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>)
+  [^ ()]+|(in|not in) [(][^()]+[)]))*$.
+normative: true
+links:
+- target: BASE-0001
+  type: has_type
+attrs:
+  pattern: ^[A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>) [^ ()]+|(in|not in)
+    [(][^()]+[)])( (and|or) [A-Z][A-Z0-9]*[.][a-z][a-z0-9_]* ((==|!=|<=|>=|<|>) [^
+    ()]+|(in|not in) [(][^()]+[)]))*$
+  origin: ai

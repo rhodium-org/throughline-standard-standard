@@ -1,0 +1,16 @@
+uid: LINK-0011
+type: link
+status: proposed
+title: An attribute declaration aliases at most one attribute declaration
+text: An attribute declaration aliases at most one attribute declaration.
+normative: true
+links:
+- target: REG-0005
+  type: from
+- target: REG-0005
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai

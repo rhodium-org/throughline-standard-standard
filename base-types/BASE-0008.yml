@@ -1,0 +1,22 @@
+uid: BASE-0008
+type: base
+status: proposed
+title: The base type file
+text: A path from the graph's root, with / between folders, naming a file that exists
+  in the graph. No leading /, no .., no \.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: file
+  written: A path from the graph's root, with / between folders, naming a file that
+    exists in the graph. No leading /, no .., no \.
+  compares: 'no'
+  valid: assets/mark.png
+  invalid: |-
+    /etc/passwd
+    ../mark.png
+    assets\mark.png
+    assets/missing.png
+  origin: ai

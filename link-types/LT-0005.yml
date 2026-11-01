@@ -1,0 +1,14 @@
+uid: LT-0005
+type: link_type
+status: proposed
+title: The link type to
+text: A link declaration runs to items of the target register (one link per register
+  allowed).
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: to
+  grounds: true
+  origin: ai

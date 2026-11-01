@@ -1,0 +1,16 @@
+uid: REG-0008
+type: register
+status: proposed
+title: Base types live in BASE
+text: This graph alone holds its base items in the register BASE, folder base-types/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: BASE
+  dir: base-types
+  holds: base
+  label: Base types
+  scope: this-graph
+  origin: ai

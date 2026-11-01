@@ -1,0 +1,18 @@
+uid: BASE-0002
+type: base
+status: proposed
+title: The base type text
+text: Any number of lines. Not empty.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: text
+  written: Any number of lines. Not empty.
+  compares: 'no'
+  valid: |-
+    One line
+    First line\nsecond line
+  invalid: (empty)
+  origin: ai

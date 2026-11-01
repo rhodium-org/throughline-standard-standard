@@ -1,0 +1,17 @@
+uid: REG-0004
+type: register
+status: proposed
+title: Value sets live in ENUM
+text: Every standard holds its enum items in the register ENUM, folder enums/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: ENUM
+  dir: enums
+  holds: enum
+  label: Value sets
+  scope: followers
+  required: false
+  origin: ai

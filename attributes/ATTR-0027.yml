@@ -1,0 +1,15 @@
+uid: ATTR-0027
+type: attribute
+status: proposed
+title: A link_type's name
+text: 'A link_type''s name: Name; always.'
+normative: true
+links:
+- target: REG-0007
+  type: belongs_to
+- target: TYPE-0008
+  type: has_type
+attrs:
+  name: name
+  required: true
+  origin: ai

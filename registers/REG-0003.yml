@@ -1,0 +1,16 @@
+uid: REG-0003
+type: register
+status: proposed
+title: Types live in TYPE
+text: Every standard holds its type items in the register TYPE, folder types/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: TYPE
+  dir: types
+  holds: type
+  label: Types
+  scope: followers
+  origin: ai

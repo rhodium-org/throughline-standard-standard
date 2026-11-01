@@ -1,0 +1,16 @@
+uid: REG-0005
+type: register
+status: proposed
+title: Attributes live in ATTR
+text: Every standard holds its attribute items in the register ATTR, folder attributes/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: ATTR
+  dir: attributes
+  holds: attribute
+  label: Attributes
+  scope: followers
+  origin: ai

@@ -1,0 +1,18 @@
+uid: REG-0001
+type: register
+status: proposed
+title: Intent live in INT
+text: Every standard holds its intent items in the register INT, folder vision/,
+  exactly one of them.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: INT
+  dir: vision
+  holds: intent
+  label: Intent
+  scope: followers
+  exactly_one: true
+  origin: ai

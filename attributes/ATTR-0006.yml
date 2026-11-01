@@ -1,0 +1,14 @@
+uid: ATTR-0006
+type: attribute
+status: proposed
+title: A register's exactly one
+text: 'A register''s exactly one: Flag; optional.'
+normative: true
+links:
+- target: REG-0002
+  type: belongs_to
+- target: TYPE-0003
+  type: has_type
+attrs:
+  name: exactly_one
+  origin: ai

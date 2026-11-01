@@ -1,0 +1,16 @@
+uid: LINK-0010
+type: link
+status: proposed
+title: A register declaration aliases at most one register declaration
+text: A register declaration aliases at most one register declaration.
+normative: true
+links:
+- target: REG-0002
+  type: from
+- target: REG-0002
+  type: to
+- target: LT-0007
+  type: via
+attrs:
+  max: 1
+  origin: ai

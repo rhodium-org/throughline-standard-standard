@@ -1,0 +1,17 @@
+uid: LINK-0007
+type: link
+status: proposed
+title: A link declaration runs from exactly one register
+text: A link declaration runs from exactly one register.
+normative: true
+links:
+- target: REG-0006
+  type: from
+- target: REG-0002
+  type: to
+- target: LT-0004
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai

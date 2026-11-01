@@ -1,0 +1,15 @@
+uid: ATTR-0001
+type: attribute
+status: proposed
+title: A register's prefix
+text: 'A register''s prefix: Prefix; always.'
+normative: true
+links:
+- target: REG-0002
+  type: belongs_to
+- target: TYPE-0006
+  type: has_type
+attrs:
+  name: prefix
+  required: true
+  origin: ai

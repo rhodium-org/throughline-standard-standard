@@ -1,0 +1,18 @@
+uid: BASE-0007
+type: base
+status: proposed
+title: The base type enum
+text: Exactly one of the values its ENUM lists, same case.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: enum
+  written: Exactly one of the values its ENUM lists, same case.
+  compares: 'no'
+  valid: 'person (ENUM: person, none)'
+  invalid: |-
+    Person (ENUM: person, none)
+    (empty)
+  origin: ai

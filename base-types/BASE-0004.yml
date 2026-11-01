@@ -1,0 +1,25 @@
+uid: BASE-0004
+type: base
+status: proposed
+title: The base type float
+text: 'A number in decimal, with a point or without: digits, with a leading - if
+  negative. No +, no exponent.'
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  name: float
+  written: 'A number in decimal, with a point or without: digits, with a leading
+    - if negative. No +, no exponent.'
+  compares: numerically
+  valid: |-
+    0
+    1.5
+    -2.25
+  invalid: |-
+    +1.5
+    1e3
+    true
+    "1.5"
+  origin: ai

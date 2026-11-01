@@ -1,0 +1,29 @@
+uid: CONS-0004
+type: constraint
+status: proposed
+title: The constraint list
+text: The attribute holds a YAML list of values, each valid for its type. An empty
+  list is left out instead.
+normative: true
+links:
+- target: BASE-0001
+  type: derives_from
+- target: BASE-0003
+  type: derives_from
+- target: BASE-0004
+  type: derives_from
+- target: BASE-0006
+  type: derives_from
+- target: BASE-0007
+  type: derives_from
+- target: BASE-0008
+  type: derives_from
+attrs:
+  name: list
+  meaning: The attribute holds a YAML list of values, each valid for its type. An
+    empty list is left out instead.
+  valid: '[plain, panels]'
+  invalid: |-
+    plain, panels
+    []
+  origin: ai

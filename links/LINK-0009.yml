@@ -1,0 +1,17 @@
+uid: LINK-0009
+type: link
+status: proposed
+title: A link declaration is about exactly one link type
+text: A link declaration is about exactly one link type.
+normative: true
+links:
+- target: REG-0006
+  type: from
+- target: REG-0007
+  type: to
+- target: LT-0006
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai

@@ -1,0 +1,16 @@
+uid: LINK-0001
+type: link
+status: proposed
+title: Every register serves the intent
+text: Every register serves the intent.
+normative: true
+links:
+- target: REG-0002
+  type: from
+- target: REG-0001
+  type: to
+- target: LT-0001
+  type: via
+attrs:
+  min: 1
+  origin: ai

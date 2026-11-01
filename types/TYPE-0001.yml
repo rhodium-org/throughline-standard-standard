@@ -1,0 +1,11 @@
+uid: TYPE-0001
+type: type
+status: proposed
+title: Line
+text: A string.
+normative: true
+links:
+- target: BASE-0001
+  type: has_type
+attrs:
+  origin: ai

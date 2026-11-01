@@ -1,0 +1,12 @@
+uid: ENUM-0001
+type: enum
+status: proposed
+title: Register scope
+text: 'One of: followers, this-graph.'
+normative: true
+links:
+- target: BASE-0007
+  type: has_type
+attrs:
+  values: followers, this-graph
+  origin: ai

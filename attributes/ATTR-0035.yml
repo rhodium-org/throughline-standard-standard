@@ -1,0 +1,15 @@
+uid: ATTR-0035
+type: attribute
+status: proposed
+title: A constraint's meaning
+text: 'A constraint''s meaning: Text; always.'
+normative: true
+links:
+- target: REG-0009
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: meaning
+  required: true
+  origin: ai

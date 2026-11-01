@@ -1,0 +1,12 @@
+uid: TYPE-0005
+type: type
+status: proposed
+title: Count
+text: A int with min 0.
+normative: true
+links:
+- target: BASE-0003
+  type: has_type
+attrs:
+  min: '0'
+  origin: ai

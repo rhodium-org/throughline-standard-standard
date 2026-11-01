@@ -1,0 +1,16 @@
+uid: LINK-0008
+type: link
+status: proposed
+title: A link declaration runs to at least one register
+text: A link declaration runs to at least one register.
+normative: true
+links:
+- target: REG-0006
+  type: from
+- target: REG-0002
+  type: to
+- target: LT-0005
+  type: via
+attrs:
+  min: 1
+  origin: ai

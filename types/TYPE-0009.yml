@@ -1,0 +1,12 @@
+uid: TYPE-0009
+type: type
+status: proposed
+title: Value list
+text: A string with pattern ^[a-z0-9][a-z0-9-]*(, [a-z0-9][a-z0-9-]*)*$.
+normative: true
+links:
+- target: BASE-0001
+  type: has_type
+attrs:
+  pattern: ^[a-z0-9][a-z0-9-]*(, [a-z0-9][a-z0-9-]*)*$
+  origin: ai

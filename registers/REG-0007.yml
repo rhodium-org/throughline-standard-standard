@@ -1,0 +1,17 @@
+uid: REG-0007
+type: register
+status: proposed
+title: Link types live in LT
+text: Every standard holds its link_type items in the register LT, folder link-types/.
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: LT
+  dir: link-types
+  holds: link_type
+  label: Link types
+  scope: followers
+  required: false
+  origin: ai

@@ -1,0 +1,19 @@
+uid: CONS-0002
+type: constraint
+status: proposed
+title: The constraint max
+text: The value is at most this. Compared as its base type compares.
+normative: true
+links:
+- target: BASE-0003
+  type: derives_from
+- target: BASE-0004
+  type: derives_from
+- target: BASE-0006
+  type: derives_from
+attrs:
+  name: max
+  meaning: The value is at most this. Compared as its base type compares.
+  valid: 'max 5: 5, 1'
+  invalid: 'max 5: 6'
+  origin: ai

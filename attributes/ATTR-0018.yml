@@ -1,0 +1,14 @@
+uid: ATTR-0018
+type: attribute
+status: proposed
+title: An attribute's required
+text: 'An attribute''s required: Flag; optional.'
+normative: true
+links:
+- target: REG-0005
+  type: belongs_to
+- target: TYPE-0003
+  type: has_type
+attrs:
+  name: required
+  origin: ai

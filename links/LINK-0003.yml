@@ -1,0 +1,19 @@
+uid: LINK-0003
+type: link
+status: proposed
+title: An attribute has exactly one type or value set
+text: An attribute has exactly one type or value set.
+normative: true
+links:
+- target: REG-0005
+  type: from
+- target: REG-0003
+  type: to
+- target: REG-0004
+  type: to
+- target: LT-0003
+  type: via
+attrs:
+  min: 1
+  max: 1
+  origin: ai
