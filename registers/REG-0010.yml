@@ -1,6 +1,6 @@
 uid: REG-0010
 type: register
-status: proposed
+status: ratified
 title: Guidance for followers lives in GUIDE
 text: 'Every standard may hold, in the register GUIDE, folder guidance/, guidance
   for the agents that write the graphs following it: each item names a file of the
@@ -17,3 +17,16 @@ attrs:
   scope: followers
   origin: ai
   required: false
+ratifications:
+- by: Henry Grech-Cini
+  id: github:rhodium289
+  at: '2026-11-03T08:05:28Z'
+  fingerprint: sha256:613bb521e819210254acf8ec03ee8a76f5aff5cede279adadf922df01360b79e
+  content:
+    type: register
+    text: 'Every standard may hold, in the register GUIDE, folder guidance/, guidance
+      for the agents that write the graphs following it: each item names a file of
+      the standard and where a new follower takes its copy.'
+    normative: true
+    derived: false
+    attrs: {}
