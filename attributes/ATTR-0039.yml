@@ -1,0 +1,28 @@
+uid: ATTR-0039
+type: attribute
+status: ratified
+title: A guidance's copy to
+text: 'A guidance''s copy to: Line; always. The path, from a new follower''s root,
+  its copy is written to.'
+normative: true
+links:
+- target: REG-0010
+  type: belongs_to
+- target: TYPE-0001
+  type: has_type
+attrs:
+  name: copy_to
+  required: true
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  id: github:rhodium289
+  at: '2026-11-03T13:32:20Z'
+  fingerprint: sha256:f3290bb3a591854abf85188963d8a36663f438213a3fd0285e2624f0dfa7f196
+  content:
+    type: attribute
+    text: 'A guidance''s copy to: Line; always. The path, from a new follower''s
+      root, its copy is written to.'
+    normative: true
+    derived: false
+    attrs: {}

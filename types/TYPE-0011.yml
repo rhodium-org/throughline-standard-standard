@@ -1,0 +1,22 @@
+uid: TYPE-0011
+type: type
+status: ratified
+title: File
+text: A file.
+normative: true
+links:
+- target: BASE-0008
+  type: has_type
+attrs:
+  origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  id: github:rhodium289
+  at: '2026-11-03T13:32:20Z'
+  fingerprint: sha256:70b28273b4d7e697f6d929d107662a8878016936d0ed6ffd6785d7f48b73b94d
+  content:
+    type: type
+    text: A file.
+    normative: true
+    derived: false
+    attrs: {}
