@@ -1,0 +1,19 @@
+uid: REG-0010
+type: register
+status: proposed
+title: Guidance for followers lives in GUIDE
+text: 'Every standard may hold, in the register GUIDE, folder guidance/, guidance
+  for the agents that write the graphs following it: each item names a file of the
+  standard and where a new follower takes its copy.'
+normative: true
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  prefix: GUIDE
+  dir: guidance
+  holds: guidance
+  label: Guidance
+  scope: followers
+  origin: ai
+  required: false

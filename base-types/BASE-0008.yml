@@ -2,8 +2,15 @@ uid: BASE-0008
 type: base
 status: ratified
 title: The base type file
-text: A path from the graph's root, with / between folders, naming a file that exists
-  in the graph. No leading /, no .., no \.
+text: 'A path from the graph''s root, with / between folders, naming a file that
+  exists in the graph. No leading /, no .., no \. A signature over an attribute of
+  this type covers the file''s content as well as its path: when the file changes,
+  the signature no longer holds.'
+rationale: 'A signature that covered only the path would let the file it names change
+  unseen: a standard''s guidance for its followers (REG-0010) or a series'' cover
+  mark could be rewritten after a person signed it. Who pays: a keeper signs again
+  after changing a named file, and every consumer that checks signatures hashes the
+  files it names.'
 normative: true
 links:
 - target: INT-0001

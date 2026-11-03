@@ -1,0 +1,16 @@
+uid: ATTR-0039
+type: attribute
+status: proposed
+title: A guidance's copy to
+text: 'A guidance''s copy to: Line; always. The path, from a new follower''s root,
+  its copy is written to.'
+normative: true
+links:
+- target: REG-0010
+  type: belongs_to
+- target: TYPE-0001
+  type: has_type
+attrs:
+  name: copy_to
+  required: true
+  origin: ai

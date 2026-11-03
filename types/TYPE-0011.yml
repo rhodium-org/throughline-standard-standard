@@ -1,0 +1,11 @@
+uid: TYPE-0011
+type: type
+status: proposed
+title: File
+text: A file.
+normative: true
+links:
+- target: BASE-0008
+  type: has_type
+attrs:
+  origin: ai
