@@ -1,0 +1,17 @@
+uid: ATTR-0040
+type: attribute
+status: proposed
+title: An intent's narrative
+text: 'An intent''s narrative: Text; always. Prose for a person meeting the standard
+  for the first time: what it is for, who reads the graphs that follow it, and what
+  a follower gains by passing it.'
+normative: true
+links:
+- target: REG-0001
+  type: belongs_to
+- target: TYPE-0002
+  type: has_type
+attrs:
+  name: narrative
+  required: true
+  origin: ai
