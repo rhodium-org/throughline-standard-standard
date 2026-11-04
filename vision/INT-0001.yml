@@ -7,9 +7,17 @@ text: A standard is read by apps written in different languages and by the AI wr
   every standard holds, itself included, and the few base types every consumer implements,
   each with values every implementation is tested against. A standard can never add
   a base type; adding one is a new version of this graph.
+rationale: A standard says what it is for, in prose, for the person who meets it
+  first (ATTR-0040).
 normative: false
 attrs:
   origin: ai
+  narrative: |-
+    This is the standard every throughline standard follows, itself included.
+
+    A throughline standard sets out what a requirement graph of some kind must hold, such as a presentation series, a plan or a site map, so that the apps reading those graphs can rely on their shape. This graph sets out what a standard itself must hold: the registers it declares its followers' items in, the attributes and links those items carry, and the few base types, such as text, date and file, that every app reading any standard has to understand in the same way.
+
+    It is read by two kinds of reader. Apps in different languages read it to learn the rules they enforce, and they test themselves against the valid and invalid values each base type lists. The AI writing a new standard reads it to know what to declare. A standard that passes tl check against this graph can be read by any of those apps without guessing.
 ratifications:
 - by: Henry Grech-Cini
   at: '2026-11-01T17:36:03Z'
