@@ -14,10 +14,13 @@ delivery_roots = ["intent"]
 ai_origins = ["ai", "hybrid"]
 
 [status]
-values = ["proposed", "draft", "ratified", "suspect", "rejected", "deleted"]
+# Retired by `tl migrate` (SR-0313): draft stood between proposal and
+# signature. Every item is born proposed and counts only once a person signs it
+# (UR-0046).
+values = ["proposed", "ratified", "suspect", "rejected", "deleted"]
 
 [status.roles]
-initial = "draft"
+initial = "proposed"
 proposed = "proposed"
 ratified = "ratified"
 invalidated = "rejected"
@@ -26,3 +29,11 @@ tombstone = "deleted"
 
 [types.intent]
 normative = false
+
+[links]
+# Declared by `tl migrate` (SR-0185) as the link types this project already
+# relies on, because an undeclared vocabulary permits every value and so
+# validates none of them. Narrow it deliberately with `tl schema` once you have
+# decided what it should be.
+types = ["aliases", "belongs_to", "derives_from", "from", "has_type", "to",
+         "via"]
