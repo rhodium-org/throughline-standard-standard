@@ -1,8 +1,10 @@
 uid: LINK-0008
 type: link
 status: ratified
-title: A link declaration runs to at least one register
-text: A link declaration runs to at least one register.
+title: A link declaration names the registers it runs to
+text: 'A link declaration names the registers it runs to by to links: at least one,
+  unless it runs outside (a link''s outside), when it names none. The Tool refuses
+  a declaration that breaks this when it reads it.'
 normative: true
 links:
 - target: REG-0006
@@ -12,7 +14,6 @@ links:
 - target: LT-0005
   type: via
 attrs:
-  min: 1
   origin: ai
 ratifications:
 - by: Henry Grech-Cini
