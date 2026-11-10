@@ -15,7 +15,7 @@ declarations are.
 | `registers/` REG | the registers every standard holds: INT (exactly one), REG, TYPE, ENUM, ATTR, LINK, LT; and the two only this graph holds, BASE and CONS (`scope: this-graph`) |
 | `attributes/` ATTR | each register's attributes, typed by TYPE and ENUM items |
 | `types/` TYPE, `enums/` ENUM | the named types and value sets those attributes use, built on the base types |
-| `links/` LINK | the links between declarations: an attribute `belongs_to` one register and `has_type` one type; a link declaration runs `from`, `to` and `via` |
+| `links/` LINK | the links between declarations: an attribute `belongs_to` one register and `has_type` one type; a link declaration runs `from`, `to` and `via`, or, with `outside` (ATTR-0040), `from` and `via` to any item of a graph the follower composes without taking its schema from |
 | `link-types/` LT | `derives_from`, `belongs_to`, `has_type`, `from`, `to`, `via`, `aliases` |
 | `base-types/` BASE | string, text, int, float, bool, date, enum, file: how each is written, how it compares, and values every implementation must accept and refuse |
 | `constraints/` CONS | min, max, pattern (a subset that reads the same in Python and JavaScript), list |

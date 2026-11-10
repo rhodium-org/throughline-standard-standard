@@ -1,8 +1,10 @@
 uid: LINK-0008
 type: link
 status: ratified
-title: A link declaration runs to at least one register
-text: A link declaration runs to at least one register.
+title: A link declaration names the registers it runs to
+text: 'A link declaration names the registers it runs to by to links: at least one,
+  unless it runs outside (a link''s outside), when it names none. The Tool refuses
+  a declaration that breaks this when it reads it.'
 normative: true
 links:
 - target: REG-0006
@@ -12,16 +14,16 @@ links:
 - target: LT-0005
   type: via
 attrs:
-  min: 1
   origin: ai
 ratifications:
 - by: Henry Grech-Cini
-  at: '2026-11-01T17:36:40Z'
-  fingerprint: sha256:44c4b7bb5d6e4f488d71773bba290bb2bc5b8406781fe5e2c4be48bea061080c
+  at: '2026-11-10T17:47:38Z'
+  fingerprint: sha256:2e7682f0cd01a66fece0ca08e5189d5076afad15d53b6e547d940609c67f7c7f
   content:
     type: link
-    text: A link declaration runs to at least one register.
+    text: 'A link declaration names the registers it runs to by to links: at least
+      one, unless it runs outside (a link''s outside), when it names none. The Tool
+      refuses a declaration that breaks this when it reads it.'
     normative: true
     derived: false
     attrs: {}
-  revision: e5680db845fe096709f23c6e5c4250ed99983448
