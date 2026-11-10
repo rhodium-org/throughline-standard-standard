@@ -11,7 +11,7 @@ declarations are.
 
 | register | holds |
 |---|---|
-| `vision/` INT | why: every consumer reads a standard the same way |
+| `vision/` INT | why: every consumer reads a standard the same way. Every standard's intent carries a `narrative`: prose saying what the standard is for (ATTR-0041) |
 | `registers/` REG | the registers every standard holds: INT (exactly one), REG, TYPE, ENUM, ATTR, LINK, LT; and the two only this graph holds, BASE and CONS (`scope: this-graph`) |
 | `attributes/` ATTR | each register's attributes, typed by TYPE and ENUM items |
 | `types/` TYPE, `enums/` ENUM | the named types and value sets those attributes use, built on the base types |
