@@ -8,7 +8,7 @@ text: A standard is read by apps written in different languages and by the AI wr
   each with values every implementation is tested against. A standard can never add
   a base type; adding one is a new version of this graph.
 rationale: A standard says what it is for, in prose, for the person who meets it
-  first (ATTR-0040).
+  first (ATTR-0041).
 normative: false
 attrs:
   origin: ai
@@ -33,3 +33,4 @@ ratifications:
     normative: false
     derived: false
     attrs: {}
+  revision: e5680db845fe096709f23c6e5c4250ed99983448
